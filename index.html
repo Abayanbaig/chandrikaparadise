@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+    <link rel="icon" type="image/png" href="assets/images/logo2.png" >
 <!--
 
 TemplateMo 591 villa agency
@@ -26,16 +29,20 @@ TemplateMo 591 villa agency
 https://templatemo.com/tm-591-villa-agency
 
 -->
+<!-- Aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
 <body>
-
+  <script>
+    AOS.init();
+  </script>
   <!-- Modal -->
-<div class="modal fade" id="autoPopup" tabindex="-1" aria-labelledby="popupLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="autoPopup" tabindex="-1" aria-labelledby="popupLabel" aria-hidden="true" data-bs-backdrop="static">
   <div class="modal-dialog">
       <div class="">
-          <div class="">
-          </div>
+        
           <div class=" ">
             
   <div class="contact-content" style="margin-top: 40px;">
@@ -43,7 +50,7 @@ https://templatemo.com/tm-591-villa-agency
       <div class="">
 
         <div class="">
-          <form id="contact-form" action="" method="post">
+          <form id="contact-form2" class=" rounded" action="https://formeasy-tt5oyjktnq-uc.a.run.app/submit" method="POST" >
             <div class="row">
               <div class="col-lg-12">
                 <div class="text-end p-0 m-0">
@@ -62,21 +69,19 @@ https://templatemo.com/tm-591-villa-agency
                   <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
                 </fieldset>
               </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <label for="subject">Subject</label>
-                  <input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on" >
-                </fieldset>
-              </div>
+        
               <div class="col-lg-12">
                 <fieldset>
                   <label for="message">Message</label>
                   <textarea name="message" id="message" placeholder="Your Message"></textarea>
                 </fieldset>
               </div>
+              <input type="hidden" readonly name="access_key" id="access" value="baabfe0c-5197-42d7-a080-6fc283635fc3" placeholder="Your Name..." autocomplete="on" required>
+
               <div class="col-lg-12">
+
                 <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+                  <button type="submit" id="form-submits" class="orange-button" onclick="document.getElementById('form-submits').innerText='Submitting ...'">Send Message</button>
                 </fieldset>
               </div>
             </div>
@@ -88,7 +93,7 @@ https://templatemo.com/tm-591-villa-agency
           </div>
       </div>
   </div>
-</div>
+</div> -->
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -162,13 +167,13 @@ https://templatemo.com/tm-591-villa-agency
     <div class="owl-carousel owl-banner">
       <div class="item item-1">
         <div class="header-text">
-          <span class="category">Chandrika  <em>Paradise</em></span>
-          <p class="display-1 text-white fw-bold">Walk in to your <br> villa that you <br> dreamt of!</p>
+          <span data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" class="category">Chandrika  <em>Paradise</em></span>
+          <p data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" class="display-1 text-white fw-bold">Walk in to your <br> villa that you <br> dreamt of!</p>
         </div>
       </div>
       <div class="item item-2">
         <div class="header-text">
-          <span class="category">100% Vastu <em>Compliant</em></span>
+          <span  class="category">100% Vastu <em>Compliant</em></span>
           <p class="display-1 text-white fw-bold">Luxury Villas <br> Spread Across <br> 5.5 Acres!</p>
         </div>
       </div>
@@ -189,25 +194,25 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-4">
           <div class="left-image">
-            <img src="assets/images/img4.jpg" alt="">
-            <a href="property-details.html"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
+            <img data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"  src="assets/images/img4.jpg" alt="">
+            <a data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" href="property-details.html"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
           </div>
         </div>
         <div class="col-lg-5">
           <div class="section-heading">
-            <h6>| About Us</h6>
-            <h2>Best luxurious <br> Villa </h2>
+            <h6  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">| About Us</h6>
+            <h2 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Best luxurious <br> Villa </h2>
           </div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Get Close to Nature
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <b>Chandrika Paradise</b>  is a budget-friendly premium residential
+                <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="accordion-body">
+                  <b >Chandrika Paradise</b>  is a budget-friendly premium residential
                     layout destined for those who wish to enjoy nature. <br> <br>
                     Complemented with thoughtful amenities <b>Chandrika Paradise</b>  offers its residents a delightful living experience,
                     defining and designing your spaces to the heavenly
@@ -244,20 +249,20 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-3">
           <div class="info-table">
             <ul>
-              <li>
+              <li data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000">
                 <img src="assets/images/info-icon-01.png" alt="" style="max-width: 52px;">
                 <h4>5.5 acres<br><span>Plot spreading area</span></h4>
               </li>
-              <li>
+              <li data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
                 <img src="assets/images/info-icon-02.png" alt="" style="max-width: 52px;">
                 <h4>BMRDA<br><span>BMRDA Approved</span></h4>
               </li>
-              <li>
+              <li data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">
                 <img src="assets/images/info-icon-03.png" alt="" style="max-width: 52px;">
                 <h4>Assistance<br><span>Bank Loan
                   Assistance</span></h4>
               </li>
-              <li>
+              <li data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
                 <img src="assets/images/info-icon-04.png" alt="" style="max-width: 52px;">
                 <h4>Vastu<br><span>100% Vastu
                   Compliant</span></h4>
@@ -274,8 +279,8 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-4 offset-lg-4">
           <div class="section-heading text-center">
-            <h6>| Video View</h6>
-            <h2>Get Closer View & Different Feeling</h2>
+            <h6 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">| Video View</h6>
+            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Get Closer View & Different Feeling</h2>
           </div>
         </div>
       </div>
@@ -307,19 +312,19 @@ https://templatemo.com/tm-591-villa-agency
           <div class="wrapper">
             <div class="row">
               <div class="col-lg-4">
-                <div class="counter">
+                <div data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000" class="counter">
                   <h2 class="timer count-title count-number" data-to="34" data-speed="1000"></h2>
                    <p class="count-text ">Buildings<br>Finished Now</p>
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="counter">
+                <div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" class="counter">
                   <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2>
                   <p class="count-text ">Years<br>Experience</p>
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="counter">
+                <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" class="counter">
                   <h2 class="timer count-title count-number" data-to="24" data-speed="1000"></h2>
                   <p class="count-text ">Awwards<br>Won 2023</p>
                 </div>
@@ -331,16 +336,14 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div>
 
-  <div id="properties">
-
-  </div>
-  <div class="section best-deal">
+  
+  <div class="section best-deal w-100" style="overflow-x: hidden;" >
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
           <div class="section-heading">
-            <h6>| Best Villa</h6>
-            <h2>Visit our villa now and experience luxury!</h2>
+            <h6 data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">| Best Villa</h6>
+            <h2 data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">Visit our villa now and experience luxury!</h2>
           </div>
         </div>
         <div class="col-lg-12">
@@ -364,7 +367,7 @@ https://templatemo.com/tm-591-villa-agency
                   <div class="row">
                     <div class="col-lg-3">
                       <div class="info-table">
-                        <ul>
+                        <ul data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                           <li>Mini Mart</li>  
                           <li>Multipurpose Hall</li>  
                           <li>Swimming Pool</li>  
@@ -373,10 +376,10 @@ https://templatemo.com/tm-591-villa-agency
                         </ul>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="col-lg-6">
                       <img src="assets/images/img11.jpg" alt="">
                     </div>
-                    <div class="col-lg-3">
+                    <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" class="col-lg-3">
                       <h4>Chandrika Paradise</h4>
                       <p>An elegantly designed space offering premium amenities, including a multipurpose hall, swimming pool with changing rooms, a mini mart, a mini clinic, and ample parking. It serves as the heart of the community, ensuring comfort, convenience, and a vibrant social atmosphere for residents.
                       <br><br>It enhances community living with spaces for relaxation, wellness, and recreation.</p>
@@ -443,161 +446,69 @@ https://templatemo.com/tm-591-villa-agency
       </div>
     </div>
   </div>
-  <!-- <div class="properties section"  >
+  <div class="properties section"  >
     <div class="container">
       <div class="row">
         <div class="col-lg-4 offset-lg-4">
           <div class="section-heading text-center">
-            <h6>| Properties</h6>
-            <h2>We Provide The Best Property You Like</h2>
+            <h6>| Floor plans</h6>
+            <h2>A PLAN FOR YOUR DREAMS!</h2>
           </div>
         </div>
       </div>
+      <!-- <h6 class="text-center">Floor plan west facing</h6> -->
       <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-01.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$2.264.000</h6>
-            <h4><a href="property-details.html">18 New Street Miami, OR 97219</a></h4>
-            <ul>
-              <li>Bedrooms: <span>8</span></li>
-              <li>Bathrooms: <span>8</span></li>
-              <li>Area: <span>545m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>6 spots</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.html">Schedule a visit</a>
-            </div>
-          </div>
+        <div class="col-12 col-md-6 mx-auto d-block mb-2">
+          <img class="w-100" src="https://cdn-ilbacdp.nitrocdn.com/BHIkzZIFWmpdyhRQhidyXKTwyhNVGxIA/assets/images/optimized/rev-b9aca06/i0.wp.com/chandrikaparadise.com/wp-content/uploads/2024/07/99ee5933127552b2bcbe2f67182f8fa4.floor-plan-chandrika-3-6686ab8e71ca2.webp">
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-02.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$1.180.000</h6>
-            <h4><a href="property-details.html">54 Mid Street Florida, OR 27001</a></h4>
-            <ul>
-              <li>Bedrooms: <span>6</span></li>
-              <li>Bathrooms: <span>5</span></li>
-              <li>Area: <span>450m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>8 spots</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.html">Schedule a visit</a>
-            </div>
-          </div>
+
+        <div class="col-12 col-md-6 mx-auto d-block mb-2">
+          <img class="w-100" src="https://cdn-ilbacdp.nitrocdn.com/BHIkzZIFWmpdyhRQhidyXKTwyhNVGxIA/assets/images/optimized/rev-b9aca06/i0.wp.com/chandrikaparadise.com/wp-content/uploads/2024/07/72465efda03dce97bd0b7da65ecb7ae1.floor-plan-chandrika-1-6686ab9108efd.webp">
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-03.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$1.460.000</h6>
-            <h4><a href="property-details.html">26 Old Street Miami, OR 38540</a></h4>
-            <ul>
-              <li>Bedrooms: <span>5</span></li>
-              <li>Bathrooms: <span>4</span></li>
-              <li>Area: <span>225m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>10 spots</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.html">Schedule a visit</a>
-            </div>
-          </div>
+
+        <div class="col-12 col-md-6 mx-auto d-block mb-2">
+          <img class="w-100" src="https://cdn-ilbacdp.nitrocdn.com/BHIkzZIFWmpdyhRQhidyXKTwyhNVGxIA/assets/images/optimized/rev-b9aca06/i0.wp.com/chandrikaparadise.com/wp-content/uploads/2024/07/99ee5933127552b2bcbe2f67182f8fa4.floor-plan-chandrika-2-6686ab8e66341.webp">
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-04.jpg" alt=""></a>
-            <span class="category">Apartment</span>
-            <h6>$584.500</h6>
-            <h4><a href="property-details.html">12 New Street Miami, OR 12650</a></h4>
-            <ul>
-              <li>Bedrooms: <span>4</span></li>
-              <li>Bathrooms: <span>3</span></li>
-              <li>Area: <span>125m2</span></li>
-              <li>Floor: <span>25th</span></li>
-              <li>Parking: <span>2 cars</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.html">Schedule a visit</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-05.jpg" alt=""></a>
-            <span class="category">Penthouse</span>
-            <h6>$925.600</h6>
-            <h4><a href="property-details.html">34 Beach Street Miami, OR 42680</a></h4>
-            <ul>
-              <li>Bedrooms: <span>4</span></li>
-              <li>Bathrooms: <span>4</span></li>
-              <li>Area: <span>180m2</span></li>
-              <li>Floor: <span>38th</span></li>
-              <li>Parking: <span>2 cars</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.html">Schedule a visit</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-06.jpg" alt=""></a>
-            <span class="category">Modern Condo</span>
-            <h6>$450.000</h6>
-            <h4><a href="property-details.html">22 New Street Portland, OR 16540</a></h4>
-            <ul>
-              <li>Bedrooms: <span>3</span></li>
-              <li>Bathrooms: <span>2</span></li>
-              <li>Area: <span>165m2</span></li>
-              <li>Floor: <span>26th</span></li>
-              <li>Parking: <span>3 cars</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="property-details.html">Schedule a visit</a>
-            </div>
-          </div>
-        </div>
+
+        <!-- <div class="col-12 col-md-6 mx-auto d-block mb-2">
+          <img class="w-100" src="https://cdn-ilbacdp.nitrocdn.com/BHIkzZIFWmpdyhRQhidyXKTwyhNVGxIA/assets/images/optimized/rev-b9aca06/i0.wp.com/chandrikaparadise.com/wp-content/uploads/2024/07/99ee5933127552b2bcbe2f67182f8fa4.floor-plan-chandrika-2-6686ab8e66341.webp">
+        </div> -->
       </div>
     </div>
-  </div> -->
+  </div>
   <div id="contact">
 
   </div>
 
-  <div class="contact section"  >
+  <div class="contact section w-100" style="overflow-x: hidden;"  >
     <div class="container">
       <div class="row">
         <div class="col-lg-4 offset-lg-4">
           <div class="section-heading text-center">
-            <h6>| Contact Us</h6>
-            <h2>Get In Touch With Our Agents</h2>
+            <h6 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">| Contact Us</h6>
+            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Get In Touch With Our Agents</h2>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="contact-content">
+  <div class="contact-content w-100" style="overflow-x: hidden;" >
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <div id="map">
-            <iframe src="https://maps.google.com/maps?width=600&height=400&hl=en&q=chandrika%20paradise&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
+          <div  id="map">
+            <iframe data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=chandrika%20paradise&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <div class="item phone">
+              <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="item phone">
                 <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
                 <h6>+91-8050380909 <br><span>Phone Number</span></h6>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="item email">
+              <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="item email">
                 <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
                 <h6>harish@gvskinfra.in<br><span>Business Email</span></h6>
               </div>
@@ -605,7 +516,10 @@ https://templatemo.com/tm-591-villa-agency
           </div>
         </div>
         <div class="col-lg-5">
-          <form id="contact-form" action="" method="post">
+          <form data-aos="fade-left" onsubmit="document.getElementById('form-submit').innerText='Submitting ...'"
+          
+          data-aos-delay="100" data-aos-duration="1000" id="contact-form" action="https://formeasy-tt5oyjktnq-uc.a.run.app/submit" method="POST" >
+
             <div class="row">
               <div class="col-lg-12">
                 <fieldset>
@@ -619,12 +533,7 @@ https://templatemo.com/tm-591-villa-agency
                   <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
                 </fieldset>
               </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <label for="subject">Subject</label>
-                  <input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on" >
-                </fieldset>
-              </div>
+             
               <div class="col-lg-12">
                 <fieldset>
                   <label for="message">Message</label>
@@ -632,8 +541,10 @@ https://templatemo.com/tm-591-villa-agency
                 </fieldset>
               </div>
               <div class="col-lg-12">
+                <input type="hidden" readonly name="access_key" id="access" value="baabfe0c-5197-42d7-a080-6fc283635fc3" placeholder="Your Name..." autocomplete="on" required>
+
                 <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+                  <button type="submit" id="form-submit" class="orange-button" >Send Message</button>
                 </fieldset>
               </div>
             </div>
@@ -721,10 +632,14 @@ https://templatemo.com/tm-591-villa-agency
   <script src="assets/js/custom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-      setTimeout(() => {
-          let myModal = new bootstrap.Modal(document.getElementById('autoPopup'));
-          myModal.show();
-      }, 5000); // 5 seconds delay
+      // setTimeout(() => {
+      //     let myModal = new bootstrap.Modal(document.getElementById('autoPopup'));
+      //     myModal.show();
+      // }, 5000); // 5 seconds delay
+
+   
+  
+
   </script>
   </body>
 </html>

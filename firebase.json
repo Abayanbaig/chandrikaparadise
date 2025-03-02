@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site":"splintzer-test",
+    "public": "/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
