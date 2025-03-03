@@ -804,7 +804,9 @@ Banner Style
   margin-right: 10px;
   transition: all .5s;
 }
-
+.bb{
+  background-color: #f35525;
+}
 .main-banner .owl-dots .active {
   background-color: #f35525;
 }
