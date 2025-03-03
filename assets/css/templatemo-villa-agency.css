@@ -796,6 +796,19 @@ Banner Style
   left: 20%;
 }
 
+.whats{
+  border-radius: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 0px;
+  background-color: #25d366;
+  border-width: 0px;
+  padding: 4px;
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
 .main-banner .owl-dots .owl-dot {
   width: 10px;
   height: 10px;
