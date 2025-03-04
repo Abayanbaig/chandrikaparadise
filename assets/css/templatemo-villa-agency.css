@@ -740,8 +740,9 @@ Banner Style
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 220px 20% 320px 20%;
+  padding: 170px 20% 320px 20%;
   /* padding:122px 7% 148px 7%; */
+  height: 85vh;
   margin-top: 0px;
 }
 
@@ -983,9 +984,9 @@ Video Style
 .video {
   /* background-image: url(../images/IMG5.jpg); */
   
-  background: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.548)), 
-  url('../images/IMG5.jpg') no-repeat center center/cover;
-  
+  /* background: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.548)), 
+  url('../images/IMG5.jpg') no-repeat center center/cover; */
+  background-color: #f35525;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1138,7 +1139,7 @@ Best Deal Style
   border-bottom: 1px solid #eee;
   text-align: left;
   font-size: 15px;
-  color: #aaa;
+  color: #646363;
   font-weight: 400;
 }
 
@@ -1734,6 +1735,12 @@ body {
 @media (max-width: 767px) {
   .header-area .main-nav .logo h1 {
     line-height: 80px !important;
+  }
+  .main-banner .owl-nav {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    transform: translateY(-50px);
   }
 
   .main-banner .item {
