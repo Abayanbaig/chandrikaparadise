@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site":"splintzer-test",
+    "site":"chandrika",
     "public": "/",
     "ignore": [
       "firebase.json",
